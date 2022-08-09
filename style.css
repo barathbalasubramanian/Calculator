@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
+
+*{
+    margin: 0;
+    font-family: 'Poppins';
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+#container {
+    background-color:#202020;
+    margin: auto;
+    display: flex;
+    width: 27%;
+    height: 80vh;
+    margin-top: 5%;
+    flex-direction: column;
+    row-gap: 10px;
+    border: 5px solid rgb(58, 53, 58);
+    border-radius: 20px;
+}
+#title{
+    margin-left: 45px;
+    font-size: 2.5em;
+    margin-top: 2px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    background-image: -webkit-linear-gradient(5deg, rgb(212, 61, 74),rgb(178, 39, 202));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 1s infinite linear;
+}
+#input_box {
+    margin: 10px;
+    min-height: 170px;
+    width: auto;
+    border-radius: 10px;
+    text-align:end;
+    font-size: 40px;
+}
+.row1,.row2,.row3,.row4,.row5 {
+    display: flex;
+    flex-direction: row;
+    column-gap: 90px;
+    color: orange;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+#el {
+    background-color: #202020;
+    color: white;
+    border: none;
+    font-size: 20px;
+} 
+.btn,.el,#el1
+
+{
+    background-color: #202020;
+    color: orange;
+    border: none;
+}
+#num {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+@keyframes hue{
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+@media only screen and (max-width:460px) {
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    #container {
+        background-color:#202020;
+        width: 90%;
+        height: 80vh;
+        margin-top: 25%;
+        flex-direction: column;
+        row-gap: 10px;
+        border: 5px solid rgb(58, 53, 58);
+        border-radius: 20px;
+    }
+    .row1,.row2,.row3,.row4,.row5 {
+        display: flex;
+        flex-direction: row;
+        column-gap: 53px;
+        color: orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    #input_box {
+        margin: 10px;
+        min-height: 130px;
+        width: auto;
+        border-radius: 10px;
+        text-align:end;
+        font-size: 30px;
+    }
+    #title{
+        margin-left: 24px;
+        font-size: 2.2em;
+        margin-top: 3px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        column-gap: 15px;
+    }
+}
