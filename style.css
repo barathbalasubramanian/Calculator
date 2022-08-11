@@ -16,7 +16,7 @@
     margin: auto;
     display: flex;
     width: 27%;
-    height: 80vh;
+    height: 85vh;
     margin-top: 5%;
     flex-direction: column;
     row-gap: 10px;
@@ -47,7 +47,7 @@
 .row1,.row2,.row3,.row4,.row5 {
     display: flex;
     flex-direction: row;
-    column-gap: 90px;
+    column-gap: 80px;
     color: orange;
     justify-content: center;
     align-items: center;
@@ -72,6 +72,10 @@
     row-gap: 30px;
 }
 
+#title span {
+    animation: App-logo-spin infinite 20s linear;
+}
+
 @keyframes hue{
     from {
         -webkit-filter: hue-rotate(0deg);
@@ -82,11 +86,7 @@
     }
 }
 
-@media only screen and (max-width:460px) {
-    body{
-        margin: 0%;
-        padding: 0%;
-    }
+@media only screen and (max-width:460px)  {
     #container {
         background-color:#202020;
         width: 90%;
@@ -121,6 +121,91 @@
         color: white;
         display: flex;
         flex-direction: row;
+        column-gap: 15px;
+    }
+}
+
+@media only screen and (min-width:850px) and (max-width:1050px) {
+    #container {
+        height: 80vh;
+        width: 32%;
+        margin-top: 9%;
+        row-gap: 10px;
+    }
+    .row1,.row2,.row3,.row4,.row5 {
+        column-gap: 45px;
+        color: orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    #title{
+        margin-left: 20px;
+        font-size: 2.0em;
+        column-gap: 15px;
+    }
+}
+
+@media only screen and (min-width:1050px) and (max-width:1300px) {
+    #container {
+        margin-top: 6%;
+        height: 83vh;
+        width: 32%;
+        row-gap: 10px;
+    }
+    .row1,.row2,.row3,.row4,.row5 {
+        column-gap: 70px;
+        color: orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    #title{
+        font-size: 2.5em;
+        column-gap: 21px;
+        margin-left: 39px;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:850px) {
+    #container {
+        margin-top: 6%;
+        height: 83vh;
+        width: 40%;
+        row-gap: 10px;
+    }
+    .row1,.row2,.row3,.row4,.row5 {
+        column-gap: 50px;
+        color: orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    #title{
+        margin-left: 20px;
+        font-size: 2.0em;
+        column-gap: 20px;
+    }
+}
+
+
+@media only screen and (min-width:460px) and (max-width:720px) {
+    #container {
+        margin-top: 6%;
+        height: 83vh;
+        width: 60%;
+        row-gap: 10px;
+    }
+    .row1,.row2,.row3,.row4,.row5 {
+        column-gap: 44px;
+        color: orange;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+    #title{
+        margin-left: 15px;
+        font-size: 2.1em;
         column-gap: 15px;
     }
 }
